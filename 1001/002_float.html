@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        .container {
+            background-color: #7fefc9;
+            width: 1000px;
+            
+/* box給float  使cntainer不見  1.給高度 2.overfloat 3.before/after */
+            
+/*            overflow: auto;*/
+        }
+        
+        .box {
+            background-color: #d67474;
+            width: 480px;
+            height: 400px;
+            margin: 10px;
+            
+            float: left;
+            
+            overflow: scroll;
+          /*    注意overfloat用法    */
+        } 
+        
+        .clearfix::after {
+            content: "";
+            display: block;
+            clear: both;
+        }
+        
+        
+    
+    </style>
+    
+    
+</head>
+<body>
+   <div class="container clearfix">
+       <div class="box">
+           <h3>THEME</h3>
+           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta cumque reprehenderit distinctio inventore at sequi velit iure cum doloremque. Maiores repellat itaque, voluptatem deleniti velit quas laudantium a enim voluptas dolores culpa unde illo, id aliquam. Neque placeat, minima expedita magnam, aperiam nesciunt doloremque, natus sapiente ratione vel rerum fugit eveniet! Officia, atque dolore minus rerum totam cumque optio. Provident, veniam obcaecati libero debitis, quis omnis odit nostrum reiciendis suscipit quibusdam ut ipsa labore delectus ex, maxime deserunt. Distinctio quam aspernatur amet, nam. Harum architecto consectetur quo laborum ipsa odit, pariatur a in autem officia accusamus, aperiam ullam aliquam nesciunt non dicta doloribus iusto aspernatur officiis hic sapiente atque reprehenderit adipisci. Fugiat delectus temporibus illo quo ipsa officia distinctio. Iusto, amet ducimus culpa! Deserunt explicabo est ad placeat tempore facere atque tenetur, facilis quibusdam animi! Tenetur consequuntur eos aliquam delectus animi, facere alias, quae possimus maiores unde inventore non architecto ex. Consequatur error itaque, minima excepturi quod sapiente, totam dolores eos, omnis perspiciatis nobis, sunt eligendi facere! Velit illo totam possimus rem, quo doloribus, quis impedit earum voluptatibus numquam eius, ad blanditiis repellendus a. Facilis dolore corrupti aperiam illum voluptatem. Asperiores eum, alias eius quasi sit. Sequi sapiente accusamus reiciendis fuga cum sed consequatur perspiciatis molestias ipsam laborum fugiat inventore dicta repudiandae excepturi, libero culpa eveniet dolorum iste recusandae illum temporibus dolor consectetur? Nostrum quis incidunt excepturi, dolorum id, itaque odit. Ea saepe reiciendis expedita iure voluptate voluptatem eligendi doloribus. Optio explicabo reiciendis, a officia dolor molestiae veniam nobis unde necessitatibus impedit, mollitia ut, vero sed quam animi dicta quos neque minima in cumque saepe officiis odio. Ducimus labore atque est adipisci quibusdam deleniti necessitatibus hic quia. Odit, similique! Laboriosam sapiente facilis autem exercitationem quasi consequatur natus, ab ea eveniet dolor architecto assumenda, neque a dolorem, pariatur tenetur voluptate consectetur.</p>
+       </div>
+       <div class="box">
+           <h3>THEME</h3>
+           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis rem, magnam vel libero amet ad ullam sint accusantium, ipsa cupiditate tempore nostrum odio soluta aut accusamus consequuntur maiores. Ab similique eius fuga nihil suscipit molestiae at corrupti totam, est fugit consequuntur omnis a, earum architecto, expedita quas quod consectetur. Consequuntur.</p>
+       </div>
+   </div>
+   
+   
+   
+    
+</body>
+</html>

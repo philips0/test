@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        
+        nav {
+/*            overflow: auto;*/
+        }
+        
+        .clearfix::after {
+            content: "";
+            display: block;
+            clear: both;
+        }
+        
+        nav ul {
+            margin: 0;
+            padding: 0;
+          /*   清除表單原本的預設間距   */
+        }
+        
+        nav li {
+            float: left;
+            list-style: none;
+        }
+        
+        nav a {
+            color: #c9304f;
+            text-decoration: none;
+            
+            display: block;
+/*
+            padding-left: 10px;
+            padding-right: 10px;
+*/
+            width: 70px;
+            text-align: center;
+            
+            height: 45px;
+            line-height: 45px;
+            
+            background-color: blanchedalmond;
+            
+             /*    等距or等寬 自行設計    */
+        }
+        
+        
+    </style>
+</head>
+<body>
+    
+    <nav class="clearfix">
+        <ul>
+            <li><a href="#">first</a></li>
+            <li><a href="#">second</a></li>
+            <li><a href="#">third....</a></li>
+            <li><a href="#">forth......</a></li>
+            <li><a href="#">fifth</a></li>
+        </ul>
+    </nav>
+    <h3>THEME</h3>
+    
+    
+</body>
+</html>

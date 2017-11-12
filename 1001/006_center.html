@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        .container {
+            background-color: #f5d0a0;
+            width: 800px;
+            height: 600px;
+            
+            text-align: center;
+           /*  block 包住 inline-block  */
+        }
+        
+        .container::before {
+            display: inline-block;
+            vertical-align: middle;
+            content: "";
+            height: 100%;
+            
+        }
+        
+/*  vertical-align是針對子元素之間至中  所以加上before增加元素為兩個  */
+        
+        .box {
+            display: inline-block;
+            vertical-align: middle;
+            width: 600px;
+        }
+        
+        .box p {
+            text-align: left;
+         /*   外層統一至中  再針對內文行修改   */
+        }
+    </style>
+
+
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="box">
+            <h2>THEME</h2>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam aspernatur, magnam nisi quasi voluptates. Esse deserunt voluptatem praesentium suscipit quasi quam aliquid porro laudantium fuga in minima, ducimus error rem vero libero non vitae nobis exercitationem fugit? Minima provident, suscipit ad. Magni aliquid autem, consequatur provident blanditiis ducimus nam distinctio.
+            </p>
+        </div>
+    </div>
+
+
+
+
+
+</body>
+</html>
